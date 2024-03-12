@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">The Hungry Bunch 3.0</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_splash">Splash</string>
+    <string name="login_title">LOGIN</string>
+    <string name="user">USERNAME</string>
+    <string name="password">PASSWORD</string>
+    <string name="login">LOGIN</string>
+    <string name="create_account">Create an account</string>
+    <string name="regRoomNumber">Room Number</string>
+    <string name="regPhoneNumber">Phone Number</string>
+    <string name="regFirstName">First Name</string>
+    <string name="regLastName">Last Name</string>
+    <string name="regEmail">Email</string>
+    <string name="regPassword">Password</string>
+    <string name="regConfirmPassword">Confirm Password</string>
+    <string name="regButton">Register</string>
+    <string name="navSignIn">Sign In</string>
+    <string name="alreadyHaveAccount">Already Have An Account?</string>
+
+</resources>
