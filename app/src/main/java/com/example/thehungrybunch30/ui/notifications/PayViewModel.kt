@@ -1,13 +1,13 @@
-package com.example.thehungrybunch30.ui.dashboard
+package com.example.thehungrybunch30.ui.notifications
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class PayViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = "Pay Here"
     }
     val text: LiveData<String> = _text
 }

@@ -13,14 +13,14 @@
 
     <fragment
         android:id="@+id/navigation_dashboard"
-        android:name="com.example.thehungrybunch30.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:name="com.example.thehungrybunch30.ui.dashboard.OrderFragment"
+        android:label="@string/title_order"
+        tools:layout="@layout/fragment_order" />
 
     <fragment
         android:id="@+id/navigation_notifications"
-        android:name="com.example.thehungrybunch30.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:name="com.example.thehungrybunch30.ui.notifications.PayFragment"
+        android:label="@string/title_pay"
+        tools:layout="@layout/fragment_pay" />
 
 </navigation>

@@ -1,5 +1,7 @@
 package com.example.thehungrybunch30.ui.login
 
+import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,14 +10,21 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.thehungrybunch30.MainActivity
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentLoginBinding
 import com.example.thehungrybunch30.ui.registration.RegistrationFragment
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
+    private lateinit var context: Context
 
     private val binding get() = _binding!!
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        this.context = context
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +51,11 @@ class LoginFragment : Fragment() {
             transaction.addToBackStack(null) // back navigation
             transaction.commit()
 
+        }
+        val testNavButton: Button = binding.testNavButton
+        testNavButton.setOnClickListener {
+            val intent = Intent(context, MainActivity::class.java)
+            startActivity(intent)
         }
         return root
     }
