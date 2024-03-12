@@ -15,6 +15,8 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.title = "The Hungry Bunch"
+
         // By default when the app is opened the Login fragment appears
         supportFragmentManager.beginTransaction()
             .replace(R.id.nav_container, LoginFragment())
@@ -22,3 +24,4 @@ class SplashActivity : AppCompatActivity() {
 
     }
 }
+

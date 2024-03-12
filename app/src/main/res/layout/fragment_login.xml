@@ -11,6 +11,7 @@
         android:id="@+id/tvLogin"
         android:layout_width="251dp"
         android:layout_height="28dp"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
