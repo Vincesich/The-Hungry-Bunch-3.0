@@ -10,10 +10,10 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.thehungrybunch30.MainActivity
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentLoginBinding
-import com.example.thehungrybunch30.ui.registration.RegistrationFragment
 
 class LoginFragment : Fragment() {
     private var _binding: FragmentLoginBinding? = null
@@ -44,13 +44,7 @@ class LoginFragment : Fragment() {
         val registrationButton: Button = binding.navRegistration
         // Set click listener for the registration button
         registrationButton.setOnClickListener{
-            val fragment = RegistrationFragment()
-            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.setCustomAnimations(R.anim.registration_slide_in_from_right, R.anim.registration_slide_out_to_right)
-            transaction.replace(R.id.nav_container, fragment)
-            transaction.addToBackStack(null) // back navigation
-            transaction.commit()
-
+            findNavController().navigate(R.id.action_loginFragment_to_registrationFragment)
         }
         val testNavButton: Button = binding.testNavButton
         testNavButton.setOnClickListener {

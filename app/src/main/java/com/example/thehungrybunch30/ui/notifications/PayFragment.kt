@@ -10,12 +10,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.thehungrybunch30.databinding.FragmentPayBinding
 
 class PayFragment : Fragment() {
+    private lateinit var binding: FragmentPayBinding
 
-    private var _binding: FragmentPayBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
-    private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -25,18 +24,14 @@ class PayFragment : Fragment() {
         val payViewModel =
             ViewModelProvider(this)[PayViewModel::class.java]
 
-        _binding = FragmentPayBinding.inflate(inflater, container, false)
-        val root: View = binding.root
+        binding = FragmentPayBinding.inflate(layoutInflater)
+
 
         val textView: TextView = binding.textNotifications
         payViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
-        return root
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+        return binding.root
     }
 }
+

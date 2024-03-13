@@ -8,9 +8,9 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentRegisterBinding
-import com.example.thehungrybunch30.ui.login.LoginFragment
 
 class RegistrationFragment : Fragment() {
     private var _binding: FragmentRegisterBinding? = null
@@ -34,12 +34,7 @@ class RegistrationFragment : Fragment() {
         }
         val navButton: Button = binding.navSignIn
         navButton.setOnClickListener{
-            val fragment = LoginFragment()
-            val transaction = requireActivity().supportFragmentManager.beginTransaction()
-            transaction.setCustomAnimations(R.anim.registration_slide_in_from_right, R.anim.registration_slide_out_to_right)
-            transaction.replace(R.id.nav_container, fragment)
-            transaction.addToBackStack(null) // back navigation
-            transaction.commit()
+            findNavController().navigate(R.id.action_registrationFragment_to_loginFragment)
         }
         return root
     }

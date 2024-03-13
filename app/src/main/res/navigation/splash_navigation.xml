@@ -9,12 +9,24 @@
         android:id="@+id/loginFragment"
         android:name="com.example.thehungrybunch30.ui.login.LoginFragment"
         android:label="Login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
+    </fragment>
 
     <fragment
         android:id="@+id/registrationFragment"
         android:name="com.example.thehungrybunch30.ui.registration.RegistrationFragment"
         android:label="Registration"
-        tools:layout="@layout/fragment_register" />
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
+    </fragment>
 
 </navigation>
