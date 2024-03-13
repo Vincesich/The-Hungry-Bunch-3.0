@@ -20,5 +20,6 @@
     <string name="navSignIn">Sign In</string>
     <string name="alreadyHaveAccount">Already Have An Account?</string>
     <string name="testNavButton">SKIP</string>
+    <string name="appbar_scrolling_view_behaviour">B</string>
 
 </resources>

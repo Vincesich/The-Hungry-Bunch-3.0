@@ -119,7 +119,7 @@
     <Button
         android:id="@+id/testNavButton"
         android:layout_width="250dp"
-        android:layout_height="wrap_content"
+        android:layout_height="59dp"
         android:backgroundTint="@color/lightBlue"
         android:text="@string/testNavButton"
         android:textColor="@color/darkBlue"
@@ -127,8 +127,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.142" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

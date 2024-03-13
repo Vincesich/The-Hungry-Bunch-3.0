@@ -2,6 +2,7 @@ package com.example.thehungrybunch30
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
@@ -19,10 +20,25 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportActionBar?.title = "The Hungry Bunch"
+        val actionBar = supportActionBar
+        if (actionBar != null) {
+            supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        }
+
         navHostFragment = supportFragmentManager.findFragmentById(R.id.nav_container)
         as NavHostFragment
         navController = navHostFragment.navController
 
+    }
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                // Handle the back button click
+                finish()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 }
 
