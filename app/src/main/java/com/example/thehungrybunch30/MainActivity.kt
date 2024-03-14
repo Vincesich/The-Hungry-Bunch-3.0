@@ -21,17 +21,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        setSupportActionBar(findViewById(R.id.topAppBar))
 
-        supportActionBar?.title = "The Hungry Bunch"
-        val actionBar = supportActionBar
-        if (actionBar != null) {
-            supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        }
+
         navHostFragment  = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)
         as NavHostFragment
         navController = navHostFragment.navController
 
         val navView: BottomNavigationView = binding.navView
+
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         val appBarConfiguration = AppBarConfiguration(
@@ -42,6 +40,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             android.R.id.home -> {
