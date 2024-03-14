@@ -7,6 +7,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".SplashActivity">
 
+
+
 <androidx.fragment.app.FragmentContainerView
     android:id="@+id/nav_container"
     android:name="androidx.navigation.fragment.NavHostFragment"
