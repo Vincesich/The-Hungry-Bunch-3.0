@@ -21,5 +21,10 @@
     <string name="alreadyHaveAccount">Already Have An Account?</string>
     <string name="testNavButton">SKIP</string>
     <string name="appbar_scrolling_view_behaviour">B</string>
+    <string name="Save_for_later">Save</string>
+    <string name="Order_now">Order</string>
+    // menu strings below
+    <string name="Monday_meal">Chicken Choma and Curry Potato Wedges</string>
+    <string name="Meal_Price">300/=</string>
 
 </resources>
