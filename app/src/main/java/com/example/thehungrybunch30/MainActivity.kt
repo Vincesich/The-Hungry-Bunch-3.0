@@ -44,7 +44,8 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             android.R.id.home -> {
                 // Handle the back button click
-                finish()
+                // Navigate back to the previous destination
+                navController.navigateUp()
                 true
             }
             else -> super.onOptionsItemSelected(item)

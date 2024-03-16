@@ -13,9 +13,9 @@
         android:contentDescription="favourite"
         app:showAsAction="ifRoom"/>
     <item
-        android:id="@+id/more"
-        android:title="more"
-        android:contentDescription="more"
+        android:id="@+id/logout"
+        android:title="logout"
+        android:contentDescription="logout"
         app:showAsAction="never"/>
 
 

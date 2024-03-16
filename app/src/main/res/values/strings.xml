@@ -25,7 +25,11 @@
     <string name="Order_now">Order</string>
     // menu strings below
     <string name="Monday_meal">Chicken Choma and Curry Potato Wedges</string>
-    <string name="Meal_Price">300/=</string>
-    <string name="Delivery_fee">Pickup Free or Delivery @ 50/=</string>
+    <string name="Meal_Price">KES 300/=</string>
+    <string name="Delivery_fee">Pickup Free or Delivery @ KES 50/=</string>
+    <string name="Tuesday_meal">Coconut Bean Stew  With Rice</string>
+    <string name="Wednesday_meal">Lentil Curry (ndengu) With Chapati</string>
+    <string name="Thursday_meal">Beef Pilau With Kachumbari</string>
+    <string name="Friday_meal">Fried Mutton With Ugali And Greens</string>
 
 </resources>

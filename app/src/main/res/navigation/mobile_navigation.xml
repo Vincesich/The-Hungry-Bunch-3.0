@@ -12,13 +12,13 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard"
+            app:destination="@id/navigation_order"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_dashboard"
+        android:id="@+id/navigation_order"
         android:name="com.example.thehungrybunch30.ui.dashboard.OrderFragment"
         android:label="@string/title_order"
         tools:layout="@layout/fragment_order" >
@@ -41,7 +41,7 @@
         tools:layout="@layout/fragment_pay" >
         <action
             android:id="@+id/action_navigation_pay_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard"
+            app:destination="@id/navigation_order"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>
