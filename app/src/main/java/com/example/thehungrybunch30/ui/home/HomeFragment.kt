@@ -34,12 +34,28 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        val navButton : Button = binding.orderButton
+      //  val textView: TextView = binding.textHome
+    //    homeViewModel.text.observe(viewLifecycleOwner) {
+            //       textView.text = it
+    //    }
+        val navButton : Button = binding.order1Button
         navButton.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
+        }
+        val navButton2 : Button = binding.order2Button
+        navButton2.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
+        }
+        val navButton3 : Button = binding.order3Button
+        navButton3.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
+        }
+        val navButton4 : Button = binding.order4Button
+        navButton4.setOnClickListener{
+            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
+        }
+        val navButton5 : Button = binding.order5Button
+        navButton5.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         return root
