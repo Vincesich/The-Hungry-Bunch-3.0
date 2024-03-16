@@ -12,19 +12,38 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_dashboard" />
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
         android:name="com.example.thehungrybunch30.ui.dashboard.OrderFragment"
         android:label="@string/title_order"
-        tools:layout="@layout/fragment_order" />
+        tools:layout="@layout/fragment_order" >
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_pay"
+            app:destination="@id/navigation_pay"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            app:destination="@id/navigation_home"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
+    </fragment>
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_pay"
         android:name="com.example.thehungrybunch30.ui.notifications.PayFragment"
         android:label="@string/title_pay"
-        tools:layout="@layout/fragment_pay" />
+        tools:layout="@layout/fragment_pay" >
+        <action
+            android:id="@+id/action_navigation_pay_to_navigation_dashboard"
+            app:destination="@id/navigation_dashboard"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right"/>
+    </fragment>
 
 </navigation>
