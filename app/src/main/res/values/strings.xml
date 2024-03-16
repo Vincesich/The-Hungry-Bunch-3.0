@@ -26,5 +26,6 @@
     // menu strings below
     <string name="Monday_meal">Chicken Choma and Curry Potato Wedges</string>
     <string name="Meal_Price">300/=</string>
+    <string name="Delivery_fee">Pickup Free or Delivery @ 50/=</string>
 
 </resources>

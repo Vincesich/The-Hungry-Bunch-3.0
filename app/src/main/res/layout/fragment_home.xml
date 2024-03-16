@@ -15,7 +15,7 @@
         <com.google.android.material.card.MaterialCardView
             android:clickable="true"
             android:focusable="true"
-            android:checkable="true"
+            android:checkable="false"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:layout_margin="8dp">
@@ -71,6 +71,7 @@
                     android:layout_margin="8dp"
                     android:orientation="horizontal">
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/order_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginEnd="8dp"
@@ -78,6 +79,7 @@
                         style="?attr/borderlessButtonStyle"
                         />
                     <com.google.android.material.button.MaterialButton
+                        android:id="@+id/save_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Save_for_later"
@@ -91,9 +93,11 @@
 
         </com.google.android.material.card.MaterialCardView>
 
+
         <!-- Scrollable content -->
 
     </androidx.core.widget.NestedScrollView>
+
 
 
 
