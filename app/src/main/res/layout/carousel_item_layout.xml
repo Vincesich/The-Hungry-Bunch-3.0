@@ -17,32 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/carousel_beef_samosa"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/carousel_image_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/beefsamosas"
-            android:contentDescription="beefsaamosa"
-            android:scaleType="centerCrop"/>
-        <ImageView
-            android:id="@+id/carousel_chicken_samosa"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/chickensamosas"
-            android:contentDescription="chickensamosa"
-            android:scaleType="centerCrop"/>
-        <ImageView
-            android:id="@+id/carousel_vegetable_spring_roll"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/vegetablespringrolls"
-            android:contentDescription="springroll"
-            android:scaleType="centerCrop"/>
-        <ImageView
-            android:id="@+id/carousel_borewors_hotdog"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/boreworshotdog"
-            android:contentDescription="borwors"
             android:scaleType="centerCrop"/>
     </com.google.android.material.carousel.MaskableFrameLayout>

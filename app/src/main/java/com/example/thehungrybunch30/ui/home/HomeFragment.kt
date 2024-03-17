@@ -13,38 +13,23 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentHomeBinding
 import com.example.thehungrybunch30.ui.carousel_adapter.CarouselAdapter
-import com.google.android.material.carousel.CarouselLayoutManager
 import com.google.android.material.carousel.CarouselSnapHelper
 
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
-
     ): View {
         val homeViewModel =
             ViewModelProvider(this)[HomeViewModel::class.java]
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val imageList = listOf(R.drawable.beefsamosas, R.drawable.chickensamosas, R.drawable.vegetablespringrolls, R.drawable.boreworshotdog)
-        val carouselAdapter = CarouselAdapter(imageList)
-        val carouselRecyclerView : RecyclerView = binding.carouselRecyclerView
-        carouselRecyclerView.adapter = carouselAdapter
-
-        // my carousel layout manager
-       carouselRecyclerView.setLayoutManager(CarouselLayoutManager())
-        // multi browse strategy for the carousel view
-        val snapHelper = CarouselSnapHelper()
-        snapHelper.attachToRecyclerView(carouselRecyclerView)
 
        val textView: TextView = binding.texth
       homeViewModel.text.observe(viewLifecycleOwner) {
@@ -70,7 +55,21 @@ class HomeFragment : Fragment() {
         navButton5.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
+        setupCarouselRecyclerView()
         return root
+    }
+
+    private fun setupCarouselRecyclerView(){
+        val carouselRecyclerView: RecyclerView = binding.carouselRecyclerView
+        CarouselSnapHelper().attachToRecyclerView(carouselRecyclerView)
+        carouselRecyclerView.adapter = CarouselAdapter(images = getImages())
+    }
+    private fun getImages(): List<Int>{
+        return listOf(
+            R.drawable.beefsamosas,
+            R.drawable.chickensamosas,
+            R.drawable.vegetablespringrolls,
+            R.drawable.boreworshotdog)
     }
 
 

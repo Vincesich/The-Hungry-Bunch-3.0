@@ -32,9 +32,7 @@
                 android:orientation="vertical"
                 android:clipChildren="false"
                 android:clipToPadding="false"
-                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"/>
+                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager" />
 
 
         <com.google.android.material.card.MaterialCardView
@@ -43,9 +41,7 @@
             android:checkable="false"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            app:layout_constraintStart_toStartOf="carousel_recycler_view"
-            app:layout_constraintTop_toTopOf="carousel_recycler_view">
+            android:layout_margin="8dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
