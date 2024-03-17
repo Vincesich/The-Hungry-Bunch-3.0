@@ -35,9 +35,8 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-// Assuming you have the RecyclerView reference as carouselRecyclerView
         val imageList = listOf(R.drawable.beefsamosas, R.drawable.chickensamosas, R.drawable.vegetablespringrolls, R.drawable.boreworshotdog)
-        val carouselAdapter = CarouselAdapter(requireContext(), imageList)
+        val carouselAdapter = CarouselAdapter(imageList)
         val carouselRecyclerView : RecyclerView = binding.carouselRecyclerView
         carouselRecyclerView.adapter = carouselAdapter
 

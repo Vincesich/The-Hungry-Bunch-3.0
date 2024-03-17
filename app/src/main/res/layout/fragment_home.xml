@@ -9,23 +9,11 @@
     android:paddingTop="60dp"
     android:paddingBottom="80dp">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/carousel_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingStart="10dp"
-        android:paddingEnd="10dp"
-        android:orientation="vertical"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
-        app:layout_constraintTop_toBottomOf="@id/carousel_recycler_view"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:paddingTop="16dp"
         android:paddingBottom="16dp">
@@ -35,13 +23,29 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/carousel_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:orientation="vertical"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                app:layoutManager="com.google.android.material.carousel.CarouselLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
         <com.google.android.material.card.MaterialCardView
             android:clickable="true"
             android:focusable="true"
             android:checkable="false"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
-            android:layout_margin="8dp">
+            android:layout_margin="8dp"
+            app:layout_constraintStart_toStartOf="carousel_recycler_view"
+            app:layout_constraintTop_toTopOf="carousel_recycler_view">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
