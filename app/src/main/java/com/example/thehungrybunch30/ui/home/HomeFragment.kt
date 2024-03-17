@@ -31,10 +31,10 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
 
-       val textView: TextView = binding.texth
-      homeViewModel.text.observe(viewLifecycleOwner) {
-        textView.text = it
-       }
+      // val textView: TextView = binding.texth
+    //  homeViewModel.text.observe(viewLifecycleOwner) {
+    //    textView.text = it
+    //   }
         val navButton : Button = binding.order1Button
         navButton.setOnClickListener{
             findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)

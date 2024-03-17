@@ -1,5 +1,6 @@
 [versions]
 agp = "8.3.0"
+coil = "2.6.0"
 compiler = "4.14.2"
 kotlin = "1.9.22"
 coreKtx = "1.12.0"
@@ -14,9 +15,11 @@ lifecycleViewmodelKtx = "2.7.0"
 navigationFragmentKtx = "2.7.7"
 navigationUiKtx = "2.7.7"
 glideVersion = "5.0.0-rc01"
+supportV4 = "28.0.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 compiler = { module = "com.github.bumptech.glide:compiler", version.ref = "compiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
@@ -29,6 +32,7 @@ androidx-lifecycle-viewmodel-ktx = { group = "androidx.lifecycle", name = "lifec
 androidx-navigation-fragment-ktx = { group = "androidx.navigation", name = "navigation-fragment-ktx", version.ref = "navigationFragmentKtx" }
 androidx-navigation-ui-ktx = { group = "androidx.navigation", name = "navigation-ui-ktx", version.ref = "navigationUiKtx" }
 github-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glideVersion" }
+support-v4 = { module = "com.android.support:support-v4", version.ref = "supportV4" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
