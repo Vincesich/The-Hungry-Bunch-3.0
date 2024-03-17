@@ -9,7 +9,7 @@ import coil.load
 import coil.transform.RoundedCornersTransformation
 import com.example.thehungrybunch30.R
 
-class CarouselAdapter(private val images: List<Int>):
+class CarouselAdapter(private val images: List<Int>,private val onClickListener: (Int) -> Unit):
     RecyclerView.Adapter<CarouselAdapter.CarouselViewHolder>(){
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CarouselViewHolder {
         return CarouselViewHolder(
@@ -29,12 +29,21 @@ class CarouselAdapter(private val images: List<Int>):
 
     inner class CarouselViewHolder(view: View): RecyclerView.ViewHolder(view){
         private val carouselImageView: AppCompatImageView = view.findViewById(R.id.carousel_image_view)
+        init {
+            carouselImageView.setOnClickListener {
+                val position = adapterPosition
+                if (position != RecyclerView.NO_POSITION) {
+                    onClickListener(images[position])
+                }
+            }
+        }
 
         fun bind(imageUrl: Int){
             carouselImageView.load(imageUrl){
                 transformations(RoundedCornersTransformation(8f))
 
             }
+            carouselImageView.setOnClickListener { onClickListener(imageUrl) }
         }
     }
 }

@@ -62,7 +62,9 @@ class HomeFragment : Fragment() {
     private fun setupCarouselRecyclerView(){
         val carouselRecyclerView: RecyclerView = binding.carouselRecyclerView
         CarouselSnapHelper().attachToRecyclerView(carouselRecyclerView)
-        carouselRecyclerView.adapter = CarouselAdapter(images = getImages())
+        carouselRecyclerView.adapter = CarouselAdapter(images = getImages()){
+            findNavController().navigate(R.id.navigation_order)
+        }
     }
     private fun getImages(): List<Int>{
         return listOf(
