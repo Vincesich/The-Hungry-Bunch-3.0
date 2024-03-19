@@ -1,5 +1,6 @@
 package com.example.thehungrybunch30.ui.registration
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,6 +11,7 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
+import com.example.thehungrybunch30.MainActivity
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentRegisterBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -62,7 +64,8 @@ class RegistrationFragment : Fragment() {
                                     FirebaseFirestore.getInstance().collection("users").document(userId)
                                         .set(user)
                                         .addOnSuccessListener {
-                                            findNavController().navigate(R.id.navigation_menu)
+                                            val intent = Intent(requireContext(), MainActivity::class.java)
+                                            startActivity(intent)
                                         }
                                         .addOnFailureListener { e ->
                                             Toast.makeText(requireContext(), "Error: ${e.message}", Toast.LENGTH_SHORT).show()
