@@ -11,7 +11,7 @@
         android:label="@string/title_home"
         tools:layout="@layout/fragment_menu" >
         <action
-            android:id="@+id/action_navigation_home_to_navigation_dashboard"
+            android:id="@+id/action_navigation_menu_to_navigation_cart"
             app:destination="@id/navigation_cart"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
@@ -23,12 +23,12 @@
         android:label="@string/title_order"
         tools:layout="@layout/fragment_cart" >
         <action
-            android:id="@+id/action_navigation_dashboard_to_navigation_pay"
+            android:id="@+id/action_navigation_cart_to_navigation_pay"
             app:destination="@id/navigation_pay"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
         <action
-            android:id="@+id/action_navigation_dashboard_to_navigation_home"
+            android:id="@+id/action_navigation_cart_to_navigation_home"
             app:destination="@id/navigation_menu"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
@@ -40,10 +40,15 @@
         android:label="@string/title_pay"
         tools:layout="@layout/fragment_pay" >
         <action
-            android:id="@+id/action_navigation_pay_to_navigation_dashboard"
+            android:id="@+id/action_navigation_pay_to_navigation_cart"
             app:destination="@id/navigation_cart"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
+        <action
+            android:id="@+id/action_navigation_pay_to_navigation_menu"
+            app:destination="@id/navigation_menu"
+            app:enterAnim="@anim/registration_slide_in_from_right"
+            app:exitAnim="@anim/registration_slide_out_to_right" />
     </fragment>
 
 </navigation>

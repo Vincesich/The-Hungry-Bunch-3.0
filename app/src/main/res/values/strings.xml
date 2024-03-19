@@ -36,10 +36,16 @@
     <string name="delivery_query">Delivery?</string>
     <string name="subtotal">Subtotal:</string>
     <string name="checkout_delivery_fee">Delivery Fee:</string>
+    <string name="delivery_fee">50</string>
+    <string name="no_delivery_fee">0</string>
     <string name="purchase_button">Purchase</string>
     <string name="meal_chosen">Meal Chosen:</string>
     <string name="quantity_number">1</string>
     <string name="total_price">Total:</string>
+    <string name="checkout_meal_chosen">%1$s</string>
+    <string name="checkout_subtotal_fee">%1$.2f</string>
+    <string name="checkout_total_fee">%1$.2f</string>
+
 
 
 </resources>

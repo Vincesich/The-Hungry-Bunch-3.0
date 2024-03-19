@@ -39,7 +39,6 @@ class MenuFragment : Fragment() {
                 300.00, // Price of the item
                 50.00 // Delivery fee
             )
-            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         val navButton2 : Button = binding.order2Button
         navButton2.setOnClickListener{
@@ -49,7 +48,6 @@ class MenuFragment : Fragment() {
                 300.00, // Price of the item
                 50.00 // Delivery fee
             )
-            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         val navButton3 : Button = binding.order3Button
         navButton3.setOnClickListener{
@@ -59,7 +57,6 @@ class MenuFragment : Fragment() {
                 300.00, // Price of the item
                 50.00 // Delivery fee
             )
-            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         val navButton4 : Button = binding.order4Button
         navButton4.setOnClickListener{
@@ -69,7 +66,6 @@ class MenuFragment : Fragment() {
                 300.00, // Price of the item
                 50.00 // Delivery fee
             )
-            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         val navButton5 : Button = binding.order5Button
         navButton5.setOnClickListener{
@@ -79,7 +75,6 @@ class MenuFragment : Fragment() {
                 300.00, // Price of the item
                 50.00 // Delivery fee
             )
-            findNavController().navigate(R.id.action_navigation_home_to_navigation_dashboard)
         }
         setupCarouselRecyclerView()
         return root
@@ -100,12 +95,15 @@ class MenuFragment : Fragment() {
             R.drawable.boreworshotdog)
     }
     private fun addItemToCart(imageResId: Int, itemName: String, price: Double, deliveryFee: Double) {
-        val newItem = CartItem(imageResId, itemName, price + deliveryFee)
-        cartItems.add(newItem)
-        // Optionally, you can notify observers of the cart items list that it has been updated.
-        // For example, if you're using LiveData, you could call a method like:
-        // cartItemsLiveData.value = cartItems
+        val bundle = Bundle().apply {
+            putInt("imageResId", imageResId)
+            putString("itemName", itemName)
+            putDouble("price", price)
+            putDouble("deliveryFee", deliveryFee)
+        }
+        findNavController().navigate(R.id.navigation_cart, bundle)
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
