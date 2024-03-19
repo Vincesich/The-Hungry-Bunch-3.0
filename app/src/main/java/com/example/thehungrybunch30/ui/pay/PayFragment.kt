@@ -20,7 +20,8 @@ class PayFragment : Fragment() {
         // Fetch Total Amount
         val totalAmount = arguments?.getString("totalAmount")
         // Set total amount in TextView
-        binding.textPay.text = totalAmount
+        val textViewPay = binding.textPay
+        textViewPay.text = totalAmount
 
         binding.orderMoreFood.setOnClickListener {
             findNavController().navigate(R.id.navigation_menu)
