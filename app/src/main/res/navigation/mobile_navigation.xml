@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_menu">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_menu"
         android:name="com.example.thehungrybunch30.ui.menu.MenuFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
-            app:destination="@id/navigation_order"
+            app:destination="@id/navigation_cart"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>
 
     <fragment
-        android:id="@+id/navigation_order"
+        android:id="@+id/navigation_cart"
         android:name="com.example.thehungrybunch30.ui.cart.CartFragment"
         android:label="@string/title_order"
-        tools:layout="@layout/fragment_order" >
+        tools:layout="@layout/fragment_cart" >
         <action
             android:id="@+id/action_navigation_dashboard_to_navigation_pay"
             app:destination="@id/navigation_pay"
@@ -29,7 +29,7 @@
             app:exitAnim="@anim/registration_slide_out_to_right"/>
         <action
             android:id="@+id/action_navigation_dashboard_to_navigation_home"
-            app:destination="@id/navigation_home"
+            app:destination="@id/navigation_menu"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>
@@ -41,7 +41,7 @@
         tools:layout="@layout/fragment_pay" >
         <action
             android:id="@+id/action_navigation_pay_to_navigation_dashboard"
-            app:destination="@id/navigation_order"
+            app:destination="@id/navigation_cart"
             app:enterAnim="@anim/registration_slide_in_from_right"
             app:exitAnim="@anim/registration_slide_out_to_right"/>
     </fragment>

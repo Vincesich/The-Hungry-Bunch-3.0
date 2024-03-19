@@ -31,5 +31,15 @@
     <string name="Wednesday_meal">Lentil Curry (ndengu) With Chapati</string>
     <string name="Thursday_meal">Beef Pilau With Kachumbari</string>
     <string name="Friday_meal">Fried Mutton With Ugali And Greens</string>
+    <string name="add_items">+</string>
+    <string name="reduce_quantity">-</string>
+    <string name="delivery_query">Delivery?</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="checkout_delivery_fee">Delivery Fee:</string>
+    <string name="purchase_button">Purchase</string>
+    <string name="meal_chosen">Meal Chosen:</string>
+    <string name="quantity_number">1</string>
+    <string name="total_price">Total:</string>
+
 
 </resources>
