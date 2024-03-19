@@ -147,6 +147,48 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="@string/delivery_query"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:textStyle="bold"
+                        android:textAppearance="?attr/textAppearanceBodyMedium"
+                        android:text="@string/quantity"
+                        android:textColor="?android:attr/textColorSecondary"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <Button
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:id="@+id/add_quantity_button"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_items"
+                        />
+                    <TextView
+                        android:id="@+id/display_quantity"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        style="@style/TextAppearance.Material3.BodyLarge"
+                        android:textAlignment="center" />
+
+                    <Button
+                        android:id="@+id/reduce_quantity_button"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="70dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/reduce_quantity" />
+
+
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -157,38 +199,16 @@
                 android:layout_margin="8dp"
                 android:orientation="horizontal">
 
-                <Button
-                    style="@style/Widget.Material3.Button.ElevatedButton"
-                    android:id="@+id/add_quantity_button"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/add_items"
-                    />
-                <TextView
-                    android:id="@+id/display_quantity"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    style="@style/TextAppearance.Material3.BodyLarge"
-                    android:textAlignment="center" />
-
-                <Button
-                    android:id="@+id/reduce_quantity_button"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
-                    android:layout_width="70dp"
-                    android:layout_height="wrap_content"
-                    android:text="@string/reduce_quantity" />
-                <TextView
-                    android:layout_width="20dp"
-                    android:layout_height="wrap_content"
-                    style="@style/TextAppearance.Material3.BodyLarge"
-                    android:textAlignment="center" />
-
-                <Button
-                    android:id="@+id/purchase_button"
-                    style="@style/Widget.Material3.Button.ElevatedButton"
+                    <Button
+                        android:id="@+id/purchase_button"
+                        style="@style/Widget.Material3.Button.ElevatedButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/purchase_button" />
+                <com.google.android.material.progressindicator.CircularProgressIndicator
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/purchase_button" />
+                    android:layout_height="wrap_content" />
+
             </LinearLayout>
 
         </LinearLayout>

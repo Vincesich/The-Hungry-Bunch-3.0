@@ -7,27 +7,26 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
+import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentPayBinding
 
 class PayFragment : Fragment() {
     private lateinit var binding: FragmentPayBinding
-
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val payViewModel =
-            ViewModelProvider(this)[PayViewModel::class.java]
-
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
+        val payViewModel = ViewModelProvider(this)[PayViewModel::class.java]
         binding = FragmentPayBinding.inflate(layoutInflater)
 
+        // Fetch Total Amount
+        val totalAmount = arguments?.getString("totalAmount")
+        // Set total amount in TextView
+        binding.textPay.text = totalAmount
 
-        val textView: TextView = binding.textNotifications
+        binding.orderMoreFood.setOnClickListener {
+            findNavController().navigate(R.id.navigation_menu)
+        }
+
+        val textView: TextView = binding.textPay
         payViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }

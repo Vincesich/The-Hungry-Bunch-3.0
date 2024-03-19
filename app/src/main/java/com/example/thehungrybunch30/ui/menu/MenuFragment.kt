@@ -12,25 +12,18 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentMenuBinding
 import com.example.thehungrybunch30.ui.carousel_adapter.CarouselAdapter
-import com.example.thehungrybunch30.ui.cart.CartItem
 import com.google.android.material.carousel.CarouselSnapHelper
 
 class MenuFragment : Fragment() {
 
     private var _binding: FragmentMenuBinding? = null
     private val binding get() = _binding!!
-    private val cartItems = mutableListOf<CartItem>()
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         val menuViewModel = ViewModelProvider(this)[MenuViewModel::class.java]
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-
-      // val textView: TextView = binding.texth
-    //  homeViewModel.text.observe(viewLifecycleOwner) {
-    //    textView.text = it
-    //   }
         val navButton : Button = binding.order1Button
         navButton.setOnClickListener{
             addItemToCart(

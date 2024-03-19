@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 class PayViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Pay Here"
+            value = "Thank You For Your Order!"
     }
     val text: LiveData<String> = _text
 }

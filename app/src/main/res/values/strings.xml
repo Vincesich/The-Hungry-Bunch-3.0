@@ -45,7 +45,10 @@
     <string name="checkout_meal_chosen">%1$s</string>
     <string name="checkout_subtotal_fee">%1$.2f</string>
     <string name="checkout_total_fee">%1$.2f</string>
-
+    <string name="quantity">Quantity</string>
+    <string name="successful_order">Successful Order</string>
+    <string name="order_more_food">Order More Food😋!</string>
+    <string name="pay_the_amount_below">Pay The Amount Below When Your Order Arrives</string>
 
 
 </resources>

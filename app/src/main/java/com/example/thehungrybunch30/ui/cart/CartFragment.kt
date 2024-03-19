@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.thehungrybunch30.R
 import com.example.thehungrybunch30.databinding.FragmentCartBinding
 import com.google.android.material.materialswitch.MaterialSwitch
@@ -24,7 +25,6 @@ class CartFragment : Fragment() {
         val imageResId = arguments?.getInt("imageResId", 0)
         val itemName = arguments?.getString("itemName")
         val price = arguments?.getDouble("price", 0.0)
-        val deliveryFee = arguments?.getDouble("deliveryFee", 0.0)
         // Update UI with retrieved data
         if (imageResId != null) {
             val imageView = binding.checkoutMealImage
@@ -42,7 +42,7 @@ class CartFragment : Fragment() {
         // Set up switch to display delivery option
         val deliverySwitch: MaterialSwitch = binding.deliverySwitch
         val deliveryFeeTextView: TextView = binding.checkoutDeliveryFee
-        val totalFeeTextView: TextView = binding.checkoutTotalFee
+
 
         // Set initial state of switch and delivery fee text
         deliverySwitch.isChecked = deliveryOption
@@ -68,8 +68,13 @@ class CartFragment : Fragment() {
         binding.reduceQuantityButton.setOnClickListener {
             decreaseQuantityAndTotal()
         }
-
-
+        binding.purchaseButton.setOnClickListener {
+            val totalAmount = binding.checkoutTotalFee.text.toString()
+            val bundle = Bundle().apply {
+                putString("totalAmount", totalAmount)
+            }
+            findNavController().navigate(R.id.navigation_pay, bundle)
+        }
         val textView: TextView = binding.textDashboard
         cartViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
