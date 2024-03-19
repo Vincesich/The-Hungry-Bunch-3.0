@@ -55,7 +55,8 @@ class LoginFragment : Fragment() {
             if (email.isNotEmpty() && password.isNotEmpty()) {
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener { task ->
                     if (task.isSuccessful) {
-                        findNavController().navigate(R.id.navigation_menu)
+                        val intent = Intent(requireContext(), MainActivity::class.java)
+                        startActivity(intent)
                     } else {
                         Toast.makeText(
                             requireContext(),
