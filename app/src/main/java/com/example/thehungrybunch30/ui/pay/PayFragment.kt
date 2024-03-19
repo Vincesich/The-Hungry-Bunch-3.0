@@ -20,7 +20,7 @@ class PayFragment : Fragment() {
         // Fetch Total Amount
         val totalAmount = arguments?.getString("totalAmount")
         // Set total amount in TextView
-        val textViewPay = binding.textPay
+        val textViewPay = binding.payAmount
         textViewPay.text = totalAmount
 
         binding.orderMoreFood.setOnClickListener {
