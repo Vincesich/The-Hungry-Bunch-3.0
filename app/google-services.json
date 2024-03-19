@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "423196418579",
+    "project_id": "the-hungry-bunch-3-0",
+    "storage_bucket": "the-hungry-bunch-3-0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:423196418579:android:07f4fec4e5d6d24db195e6",
+        "android_client_info": {
+          "package_name": "com.example.thehungrybunch30"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXwZu2C1BtQor6qG7Pyc2l_WZOrLBgDx8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
