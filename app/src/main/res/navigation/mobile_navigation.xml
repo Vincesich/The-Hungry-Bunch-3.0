@@ -7,9 +7,9 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.example.thehungrybunch30.ui.home.HomeFragment"
+        android:name="com.example.thehungrybunch30.ui.menu.MenuFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_menu" >
         <action
             android:id="@+id/action_navigation_home_to_navigation_dashboard"
             app:destination="@id/navigation_order"
@@ -19,7 +19,7 @@
 
     <fragment
         android:id="@+id/navigation_order"
-        android:name="com.example.thehungrybunch30.ui.dashboard.OrderFragment"
+        android:name="com.example.thehungrybunch30.ui.cart.CartFragment"
         android:label="@string/title_order"
         tools:layout="@layout/fragment_order" >
         <action
@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/navigation_pay"
-        android:name="com.example.thehungrybunch30.ui.notifications.PayFragment"
+        android:name="com.example.thehungrybunch30.ui.pay.PayFragment"
         android:label="@string/title_pay"
         tools:layout="@layout/fragment_pay" >
         <action

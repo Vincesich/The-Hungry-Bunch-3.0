@@ -1,4 +1,4 @@
-package com.example.thehungrybunch30.ui.dashboard
+package com.example.thehungrybunch30.ui.cart
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -9,7 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import com.example.thehungrybunch30.databinding.FragmentOrderBinding
 
-class OrderFragment : Fragment() {
+class CartFragment : Fragment() {
 
     private var _binding: FragmentOrderBinding? = null
 
@@ -22,14 +22,14 @@ class OrderFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val orderViewModel =
-            ViewModelProvider(this)[OrderViewModel::class.java]
+        val cartViewModel =
+            ViewModelProvider(this)[CartViewModel::class.java]
 
         _binding = FragmentOrderBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         val textView: TextView = binding.textDashboard
-        orderViewModel.text.observe(viewLifecycleOwner) {
+        cartViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
         return root

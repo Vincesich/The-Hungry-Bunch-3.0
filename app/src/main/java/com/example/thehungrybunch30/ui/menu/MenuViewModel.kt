@@ -1,13 +1,13 @@
-package com.example.thehungrybunch30.ui.notifications
+package com.example.thehungrybunch30.ui.menu
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class PayViewModel : ViewModel() {
+class MenuViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "Pay Here"
+        value = ""
     }
     val text: LiveData<String> = _text
 }

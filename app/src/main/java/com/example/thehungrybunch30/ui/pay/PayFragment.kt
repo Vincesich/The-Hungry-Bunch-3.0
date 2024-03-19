@@ -1,4 +1,4 @@
-package com.example.thehungrybunch30.ui.notifications
+package com.example.thehungrybunch30.ui.pay
 
 import android.os.Bundle
 import android.view.LayoutInflater

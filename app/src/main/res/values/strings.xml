@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">The Hungry Bunch 3.0</string>
-    <string name="title_home">Home</string>
-    <string name="title_order">Order</string>
+    <string name="title_home">Menu</string>
+    <string name="title_order">Cart</string>
     <string name="title_pay">Pay</string>
     <string name="title_splash">Splash</string>
     <string name="login_title">LOGIN</string>
