@@ -1,6 +1,6 @@
 # The Hungry Bunch
 
-Welcome to The Hungry Bunch GitHub repository!
+Welcome to The Hungry Bunch GitHub repository!😋
 The Hungry Bunch is a food delivery application designed to connect hungry Qwetu Hostel residents with quality and affordable meals 
 from fellow student vendors within the building,they can order food for delivery or pickup from the vendors room once the food is ready.
 
@@ -11,6 +11,8 @@ from fellow student vendors within the building,they can order food for delivery
 - **User Authentication**: Users can create accounts and log in securely.
 - **Browse Weekly Meals**: Browse through a list of meals for delivery or pickup.
 - **Order Food**: Place orders from student vendors and specify delivery or pickup preferences.
+
+### The application UI is designed using the all new Material 3 😁
 
 ## Setup Process
 
