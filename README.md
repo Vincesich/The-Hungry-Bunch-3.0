@@ -28,7 +28,7 @@ To run The Hungry Bunch application locally, follow these steps:
 
 1. **Clone the Repository**: Clone this GitHub repository to your local machine using the following command:
    
-   git clone https://github.com/your-username/the-hungry-bunch.git
+   git clone https://github.com/Vincesich/the-hungry-bunch.git
    
 3. **Open in Android Studio**: Open the cloned project directory in Android Studio.
 
