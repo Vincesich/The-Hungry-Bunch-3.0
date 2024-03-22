@@ -13,6 +13,15 @@ from fellow student vendors within the building,they can order food for delivery
 - **Order Food**: Place orders from student vendors and specify delivery or pickup preferences.
 
 ### The application UI is designed using the all new Material 3 😁
+![1711013760068](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/abd5c223-646f-408d-9c59-a0d0a4d3531c)
+![1711013760064](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/1310ee8c-3985-4d73-ad89-498779716816)
+![1711013760058](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/fac51a5b-7969-4f2a-8808-ff5f40a53774)
+![1711013760060](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/de91ce30-9c91-4475-8dba-5369a47f1ae6)
+![1711013760071](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/55861c9a-057e-4cff-86cd-e78ec1f3b676)
+![1711013760049](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/1d566c99-e112-4ad3-bac1-29ba3101d800)
+![1711013760074](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/771a0f4a-cdad-4cc7-b896-07cff3205d0e)
+![1711013760077](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/dc37ff1e-547a-4ccc-9034-80396f62e837)
+![1711013760054](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/4096175a-4ec3-4051-aecf-ce9d89fb3d47)
 
 ## Setup Process
 
