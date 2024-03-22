@@ -17,8 +17,6 @@ from fellow student vendors within the building,they can order food for delivery
 ![1711013760074](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/771a0f4a-cdad-4cc7-b896-07cff3205d0e)
 ![1711013760068](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/abd5c223-646f-408d-9c59-a0d0a4d3531c)
 ![1711013760054](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/4096175a-4ec3-4051-aecf-ce9d89fb3d47)
-![1711013760058](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/fac51a5b-7969-4f2a-8808-ff5f40a53774)
-![1711013760060](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/de91ce30-9c91-4475-8dba-5369a47f1ae6)
 ![1711013760049](https://github.com/Vincesich/The-Hungry-Bunch-3.0/assets/82143726/1d566c99-e112-4ad3-bac1-29ba3101d800)
 
 ## Setup Process
